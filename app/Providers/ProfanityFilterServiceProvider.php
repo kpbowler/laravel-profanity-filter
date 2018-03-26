@@ -1,8 +1,8 @@
 <?php
 
-namespace Askedio\Laravel5ProfanityFilter\Providers;
+namespace Kpbowler\Laravel5ProfanityFilter\Providers;
 
-use Askedio\Laravel5ProfanityFilter\ProfanityFilter;
+use Kpbowler\Laravel5ProfanityFilter\ProfanityFilter;
 use Illuminate\Support\ServiceProvider;
 
 class ProfanityFilterServiceProvider extends ServiceProvider
@@ -34,7 +34,7 @@ class ProfanityFilterServiceProvider extends ServiceProvider
 
         $this->publishes([
           realpath(__DIR__.'/../../resources/config/profanity.php') => config_path('profanity.php'),
-          realpath(__DIR__.'/../../resources/lang')                 => resource_path('lang/vendor/profanity'),
+          realpath(__DIR__.'/../../resources/lang')                 => base_path('resource') . 'lang/vendor/profanity',
         ], 'config');
 
         app('validator')->extend('profanity', function ($attribute, $value, $parameters, $validator) {

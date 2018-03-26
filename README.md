@@ -1,18 +1,19 @@
-[![Build Status](https://travis-ci.org/Askedio/Laravel5-Profanity-Filter.svg?branch=master)](https://travis-ci.org/Askedio/Laravel5-Profanity-Filter)
-[![StyleCI](https://styleci.io/repos/74531615/shield?branch=master)](https://styleci.io/repos/74531615)
 
 # Laravel Profanity Filter
 Filter profanity, or other bad words, out of a string using Laravels [localization](https://laravel.com/docs/5.6/localization) feature or with any PHP application and some custom coding.
 
+#Attribution
+This package is a fork of [Askedio\laravel-profanity-filter](https://github.com/Askedio/laravel-profanity-filter) buts adds support for Laravel 5.0.
+
 # Installation
 ```
-composer require askedio/laravel5-profanity-filter
+composer require kpbowler/laravel5-profanity-filter
 ```
 
 ## Register in config/app.php.
 Register the service providers in Laravel 5.4 or lower to enable the package:
 ```
-Askedio\Laravel5ProfanityFilter\Providers\ProfanityFilterServiceProvider::class,
+Kpbowler\Laravel5ProfanityFilter\Providers\ProfanityFilterServiceProvider::class,
 ```
 
 ## Configure
@@ -67,7 +68,7 @@ $request->validate([
 You can also use this package without Laravel.
 
 ```php
-use Askedio\Laravel5ProfanityFilter\ProfanityFilter;
+use Kpbowler\Laravel5ProfanityFilter\ProfanityFilter;
 
 $config = []; // Data from `resources/config/profanity.php`
 $badWordsArray = []; // Data from `resources/lang/[lang]/profanity.php`

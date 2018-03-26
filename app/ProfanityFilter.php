@@ -1,6 +1,6 @@
 <?php
 
-namespace Askedio\Laravel5ProfanityFilter;
+namespace Kpbowler\Laravel5ProfanityFilter;
 
 class ProfanityFilter
 {

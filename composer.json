@@ -1,5 +1,5 @@
 {
-    "name": "askedio/laravel5-profanity-filter",
+    "name": "kpbowler/laravel5-profanity-filter",
     "description": "A Vendor Package Example",
     "keywords": ["laravel"],
     "license": "AGPL-3.0",
@@ -15,19 +15,20 @@
     },
     "autoload": {
         "psr-4": {
-            "Askedio\\Laravel5ProfanityFilter\\": "app/"
+            "Kpbowler\\Laravel5ProfanityFilter\\": "app/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Askedio\\Laravel5ProfanityFilter\\Tests\\" : "tests"
+            "Kpbowler\\Laravel5ProfanityFilter\\Tests\\" : "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Askedio\\Laravel5ProfanityFilter\\Providers\\ProfanityFilterServiceProvider"
+                "Kpbowler\\Laravel5ProfanityFilter\\Providers\\ProfanityFilterServiceProvider"
             ]
         }
-    }   
+    },
+    "minimum-stability": "dev"
 }
